@@ -85,7 +85,6 @@ public class SillyTeleOp extends LinearOpMode{
             // opening the claw!
             if (gamepad1.right_bumper) {
                claw.setPosition(0.2); }
-        
             // closing the claw!
             else if (gamepad1.left_bumper) {
                claw.setPosition(1); }
@@ -114,7 +113,10 @@ public class SillyTeleOp extends LinearOpMode{
                 slidesLeft.setPower(0);
                 slidesRight.setPower(0); }
             
+            // silly imu!
+            if (gamepad1.start) {
+                imu.reset(); }
+            
         }
     }
-    
 }
