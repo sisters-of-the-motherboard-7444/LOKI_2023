@@ -10,7 +10,7 @@ SillyTagProcessor = AprilTagProcessor.easyCreateWithDefaults();
 TfodProcessor SillyTensorProcessor;
 SillyTensorProcessor = TfodProcessor.easyCreateWithDefaults();
 
-// maybe enable and disabling step?
+// maybe enable and disable step?
 
 /* VISIONPORTAL INITIALIZATION */
 
@@ -18,3 +18,10 @@ SillyTensorProcessor = TfodProcessor.easyCreateWithDefaults();
 VisioPortal SillyVisionPortal;
 SillyVisionPortal = VisionPortal.easyCreateWithDefaults(hardwareMap.get(WEBCAMNAME.class, "WEBCAM NAME"), SillyTagProcessor);
 //SillyVisionPortal = VisionPortal.easyCreateWithDefaults(hardwareMap.get(WEBCAMNAME.class, "WEBCAM NAME"), SillyTagProcessor, SillyTensorProcessor);
+
+// maybe enable disable step again?
+
+/* BEGINNING DETECTION AFTER INITING SILLINESS */
+
+AprilTagDetection SillyTagDetection;
+int TAGIDCODE = SillyTagDetection.id;
