@@ -46,7 +46,7 @@ import org.firstinspires.ftc.robotcore.external.hardware.camera.WebcamName;
     final float THRESHOLD_HIGH_DECIMATION_RANGE_METERS = 1.0f;
     final int THRESHOLD_NUM_FRAMES_NO_DETECTION_BEFORE_LOW_DECIMATION = 4;
 
-      @override
+      @Override
       public void runOpMode() throws InterruptedException {
         Pichu.InitializeRobot(hardwareMap);
 
